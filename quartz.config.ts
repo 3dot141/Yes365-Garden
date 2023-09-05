@@ -10,13 +10,17 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     baseUrl: "garden.3dot141.top",
-    ignorePatterns: ["private",
+    ignorePatterns: [
+      "private",
       "templates",
+      "Template",
       ".obsidian",
       ".git",
       ".backup",
       ".trash",
-      "Excalidraw"],
+      "Excalidraw",
+      "\.excalidraw"
+    ],
     defaultDateType: "created",
     theme: {
       typography: {
@@ -50,6 +54,7 @@ const config: QuartzConfig = {
   },
   plugins: {
     transformers: [
+      Plugin.Dataview(),
       Plugin.FrontMatter(),
       Plugin.TableOfContents(),
       Plugin.CreatedModifiedDate({
@@ -62,7 +67,10 @@ const config: QuartzConfig = {
       Plugin.Latex({ renderEngine: "katex" }),
       Plugin.Description(),
     ],
-    filters: [Plugin.RemoveDrafts()],
+    filters: [
+      Plugin.RemoveDrafts(),
+      Plugin.RemoveExcalidraws()
+    ],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources({ fontOrigin: "googleFonts" }),
