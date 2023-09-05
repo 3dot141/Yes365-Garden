@@ -3,14 +3,20 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "Yes365's Garden",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "garden.3dot141.top",
+    ignorePatterns: ["private",
+      "templates",
+      ".obsidian",
+      ".git",
+      ".backup",
+      ".trash",
+      "Excalidraw"],
     defaultDateType: "created",
     theme: {
       typography: {
