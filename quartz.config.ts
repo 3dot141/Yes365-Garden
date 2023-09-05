@@ -56,6 +56,7 @@ const config: QuartzConfig = {
     transformers: [
       Plugin.Dataview(),
       Plugin.FrontMatter(),
+      Plugin.HugoFrontMatter(),
       Plugin.TableOfContents(),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "filesystem"], // you can add 'git' here for last modified from Git but this makes the build slower

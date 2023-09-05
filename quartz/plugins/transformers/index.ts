@@ -1,5 +1,6 @@
 export { Dataview } from "./dataview"
 export { FrontMatter } from "./frontmatter"
+export { HugoFrontMatter } from "./hugo-adaptor"
 export { GitHubFlavoredMarkdown } from "./gfm"
 export { CreatedModifiedDate } from "./lastmod"
 export { Latex } from "./latex"
