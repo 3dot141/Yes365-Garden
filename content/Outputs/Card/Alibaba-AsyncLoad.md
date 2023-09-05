@@ -1,16 +1,17 @@
 ---
-aliases: []
+tags: []
 created_date: 2023-08-25 16:00
+aliases: []
 draft: false
-summary: ''
-tags:
-- dev
+summary:
 ---
 
 > [GitHub - alibaba/asyncload: 阿里巴巴异步并行加载工具(依赖字节码技术)](https://github.com/alibaba/asyncload)  
 > [扩展异步并行调度框架asyncLoad支持注解配置](扩展异步并行调度框架asyncLoad支持注解配置.md)
 
 ## 实现原理
+
+test
 
 - 原理：线程池 + Future + Cglib 结合的方式来实现
 - 优点：正好是异步并行基本实现方式对应的缺点，不需要基础开发人员了解更多异步并行实现方式，可以让基础开发人员还是按照原来开发串行执行代码一样进行开发，唯一的不同就是在需要异步并行执行的方法上增加对应的配置（xml，注解等方式）;

@@ -3,7 +3,9 @@ aliases: []
 draft: false
 tags:
   - ai
-created_date: 2023-07-13 10:14
+created_date: 星期四, 七月 13日 2023, 10:14:00 上午
+modified_date: 星期二, 九月 5日 2023, 6:19:04 晚上
+title: Hugging Face 训练全流程探索
 ---
 
 > 使用 huggingface 的全流程训练
@@ -319,7 +321,7 @@ class PeftArguments(TrainingArguments):
 
 ## ChatGLM2 踩坑
 
-1. [Fix resuming PeftModel checkpoints in Trainer by llohann-speranca · Pull Request #24274 · huggingface/transformers · GitHub](https://github.com/huggingface/transformers/pull/24274) 使用 lora 尝试恢复的 checkpoints 的时候，发现恢复失败，参看 [训练细节](#训练细节) 发现依然存在问题。查询 `transformers` 的 issues 后，发现存在问题还没发布。所以魔改了一遍。
+1. [Fix resuming PeftModel checkpoints in Trainer by llohann-speranca · Pull Request \#24274 · huggingface/transformers · GitHub](https://github.com/huggingface/transformers/pull/24274) 使用 lora 尝试恢复的 checkpoints 的时候，发现恢复失败，参看 [训练细节](#训练细节) 发现依然存在问题。查询 `transformers` 的 issues 后，发现存在问题还没发布。所以魔改了一遍。
 2. 尝试 merge lora 权重的时候，报错 `set_input_embeddings > NotImplementedError` 对比源码后，发现 [ChatGLM](https://huggingface.co/THUDM/chatglm-6b/blob/main/modeling_chatglm.py) 不存在问题，是因为实现了相关的源码。
 	1. 见对比图
 	2. ![505](Attachments/0652c68ed511cc1def7d1313868a8643_MD5.png)

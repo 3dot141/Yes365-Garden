@@ -3,6 +3,7 @@ aliases: []
 draft: false
 tags: []
 created_date: <% tp.file.creation_date() %>
+modified_date: <%+ tp.file.last_modified_date() %>
 ---
 
 ```dataviewjs

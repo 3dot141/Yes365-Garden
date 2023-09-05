@@ -40,9 +40,9 @@ title: 食知动物
 			1. entertainment
 		8. 科技（technology）：
 			1. computer
-		9. 信息 (information）：
+		9. 信息 (information) ：
 	- dev: 开发者
-		1. deploy:
+		1. deploy: 部署
 	- utilities: 实用工具
 		- software：软件
 	- daily: 日常

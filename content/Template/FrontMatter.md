@@ -4,6 +4,7 @@ created_date: <% tp.file.creation_date() %>
 aliases: []
 draft: false
 summary: 
+modified_date: <%+ tp.file.last_modified_date() %>
 ---
 
 <% tp.file.cursor() %>

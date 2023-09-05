@@ -2,4 +2,4 @@
 
 source_dir="../../TheBrain"
 
-./copy.sh "$source_dir" ../
+./build.sh "$source_dir" ../
