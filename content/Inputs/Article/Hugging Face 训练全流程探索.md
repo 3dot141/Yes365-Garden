@@ -3,8 +3,8 @@ aliases: []
 draft: false
 tags:
   - ai
-created_date: 星期四, 七月 13日 2023, 10:14:00 上午
-modified_date: 星期二, 九月 5日 2023, 6:19:04 晚上
+created_date: 2023-07-13 10:14
+modified_date: 2023-09-05 18:19
 title: Hugging Face 训练全流程探索
 ---
 

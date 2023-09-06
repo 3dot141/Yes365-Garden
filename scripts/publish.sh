@@ -1,12 +1,11 @@
 #!/bin/bash
 
-source_dir="$1"
-
-# 复制内容
-./copy.sh "$source_dir" ../
+# 获取当前脚本的绝对路径
+script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+echo "[publish]script_dir is $script_dir"
 
 # 切换到主目录
-cd ../
+cd "$script_dir/../"
 
 # 拉取最新代码
 git pull

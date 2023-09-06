@@ -4,6 +4,8 @@ draft: false
 tags:
   - ai
 created_date: 2023-08-23 22:30
+title: LangChain Agent 执行过程解析
+modified_date: 2023-09-05 23:31
 ---
 
 - 什么是LangChain Agent
@@ -120,7 +122,7 @@ Use the following format: # 请使用以下格式(回答)
 Question: the input question you must answer #  你必须回答输入的问题
 Thought: you should always think about what to do
  # 你应该一直保持思考，思考要怎么解决问题
-Action: the action to take, should be one of [Calculator, Weather] #  你应该采取[计算器,天气]之一
+Action: the action to take, should be one of [Calculator, Weather]\#  你应该采取[计算器,天气]之一
 Action Input: the input to the action #  动作的输入
 Observation: the result of the action # 动作的结果
 …  (this Thought/Action/Action Input/Observation can repeat N times) # 思考-行动-输入-输出 的循环可以重复N次
