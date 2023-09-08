@@ -11,6 +11,6 @@ source_dir="$1"
 target_dir="$2"
 
 # 执行命令
-rm -r "$target_dir"content/*
-cp -r --preserve=timestamps "$source_dir"/*/ "$target_dir"/content
-cp -r --preserve=timestamps "$source_dir"/Home.md "$target_dir"/content/index.md
+rm -rf "$target_dir"content/*
+cp -r "$source_dir"/*/ "$target_dir"/content
+cp -r "$source_dir"/Home.md "$target_dir"/content/index.md
