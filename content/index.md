@@ -4,7 +4,7 @@ draft: false
 tags: []
 created_date: 2022-10-30 16:23
 title: Home
-modified_date: 2023-09-08 22:34
+modified_date: 2023-09-08T22:33
 ---
 
 > 「Infovores · 食知动物」，用来形容那些强行给自己灌输无穷无尽的书籍、文章和课程，希望有东西能坚持下来，但最终一无所得的人

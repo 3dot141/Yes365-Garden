@@ -11,6 +11,6 @@ source_dir="$1"
 target_dir="$2"
 
 # 执行命令
-rm -rf "$target_dir"content/*
+rm -rf "$target_dir"/content/*
 cp -r "$source_dir"/*/ "$target_dir"/content
 cp -r "$source_dir"/Home.md "$target_dir"/content/index.md
