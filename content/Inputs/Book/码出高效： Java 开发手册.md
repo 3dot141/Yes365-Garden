@@ -1,3 +1,9 @@
+---
+title: 码出高效： Java 开发手册
+created_date: 2023-07-11 10:33
+modified_date: 2023-09-13 13:48
+---
+
 ## 1.2 浮点数： 
 
 符号位 + 阶码位 + 尾数位
@@ -18,7 +24,7 @@ SYN (Synchronize Sequence Numbers), ACK (Acknowledgement),
 FIN (Finish), URG,PSH,RST  
 都以置为 1 为有效
 
-TCP 连接的建立是通过文件描述符 （File Descriptor , fd) 完成。  
+TCP 连接的建立是通过[文件描述符](../Article/句柄和文件描述符.md) （File Descriptor , fd) 完成。  
 fd 的数量由服务端进程和操作系统锁支持的最大文件句柄数决定。
 
 ```java

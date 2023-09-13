@@ -12,5 +12,15 @@ target_dir="$2"
 
 # 执行命令
 rm -rf "$target_dir"/content/*
-cp -r "$source_dir"/*/ "$target_dir"/content
+
+echo "[copy] source_dir is $source_dir"
+
+# 复制目录
+directories=$(ls -l "$source_dir"/ | awk '/^d/ {print $NF}')
+echo "[copy] directories is $directories"
+for dir in $directories; do
+  echo "[copy] source is $source_dir/$dir"
+  cp -r "$source_dir/$dir" "$target_dir"/content
+done
+
 cp -r "$source_dir"/Home.md "$target_dir"/content/index.md

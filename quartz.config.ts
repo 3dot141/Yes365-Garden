@@ -19,7 +19,8 @@ const config: QuartzConfig = {
       ".backup",
       ".trash",
       "Excalidraw",
-      "\.excalidraw"
+      "\.excalidraw",
+      "bins"
     ],
     defaultDateType: "created",
     theme: {

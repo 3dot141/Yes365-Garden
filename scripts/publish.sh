@@ -25,3 +25,6 @@ echo "$status"
 git commit -m "publish blogs"
 # 推送到远程仓库
 git push
+
+# publish
+vercel
