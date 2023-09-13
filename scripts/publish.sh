@@ -26,5 +26,6 @@ git commit -m "publish blogs"
 # 推送到远程仓库
 git push
 
-# publish
+# deploy
+echo "[deploy] content will deploy to vercel"
 vercel
