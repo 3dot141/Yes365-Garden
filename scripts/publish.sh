@@ -7,8 +7,6 @@ echo "[publish]script_dir is $script_dir"
 # 切换到主目录
 cd "$script_dir/../"
 
-# 拉取最新代码
-git pull
 # 添加所有修改到暂存区
 git add .
 # 检查 git 状态
@@ -23,6 +21,8 @@ echo "commits: "
 echo "$status"
 # 提交代码，使用传递的参数作为提交消息
 git commit -m "publish blogs"
+# 拉取最新代码
+git pull
 # 推送到远程仓库
 git push
 

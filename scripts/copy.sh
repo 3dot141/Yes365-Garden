@@ -15,7 +15,7 @@ rm -rf "$target_dir"/content/*
 
 # 复制目录
 directories=$(ls -l "$source_dir"/ | awk '/^d/ {print $NF}')
-efor dir in $directories; do
+for dir in $directories; do
   cp -r "$source_dir/$dir" "$target_dir"/content
 done
 
