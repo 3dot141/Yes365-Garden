@@ -23,7 +23,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
     Component.DesktopOnly(Component.RecentNotes({
-          linkToMore: "tags/components",
+          linkToMore: "tags/recent",
         }
     )),
   ],
