@@ -71,7 +71,25 @@ function TagContent(props: QuartzComponentProps) {
         </div>
       </div>
     )
-  } else {
+  }
+    if (tag == "recent") {
+      const pages = allPagesWithTag(tag)
+      const listProps = {
+        ...props,
+        allFiles,
+      }
+
+      return (
+        <div class="popover-hint">
+          <article>{content}</article>
+          <p>{pluralize(pages.length, "item")} with this tag.</p>
+          <div>
+            <PageList limit={50} {...listProps} />
+          </div>
+        </div>
+      )
+    }
+
     const pages = allPagesWithTag(tag)
     const listProps = {
       ...props,
@@ -87,7 +105,6 @@ function TagContent(props: QuartzComponentProps) {
         </div>
       </div>
     )
-  }
 }
 
 TagContent.css = style + PageList.css

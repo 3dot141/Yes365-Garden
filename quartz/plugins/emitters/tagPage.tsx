@@ -42,6 +42,8 @@ export const TagPage: QuartzEmitterPlugin<FullPageLayout> = (userOpts) => {
       )
       // add base tag
       tags.add("index")
+      // add recent tag
+      tags.add("recent");
 
       const tagDescriptions: Record<string, ProcessedContent> = Object.fromEntries(
         [...tags].map((tag) => {
