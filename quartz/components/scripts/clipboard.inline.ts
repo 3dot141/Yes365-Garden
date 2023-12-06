@@ -30,4 +30,18 @@ document.addEventListener("nav", () => {
       els[i].prepend(button)
     }
   }
+
+  const share = document.getElementById("share-id");
+  const dataUrl = share?.getAttribute("data-url");
+  if (dataUrl) {
+    share?.addEventListener("click", (event) => {
+      event.preventDefault();
+      const fullUrl = location.origin + "/" + dataUrl;
+      navigator.clipboard.writeText(fullUrl).then(
+        () => {
+        },
+        (error) => console.log(error)
+      )
+    })
+  }
 })
