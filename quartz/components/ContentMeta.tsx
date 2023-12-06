@@ -21,7 +21,7 @@ export default (() => {
       }
 
       segments.push(timeTaken);
-      return <p class={`content-meta ${displayClass ?? ""}`}>{share ? <a id="share-id" href="#" data-url={`${share}`}>share, </a> : ""}{segments.join(", ")}</p>
+      return <p class={`content-meta ${displayClass ?? ""}`}>{share ? <a id="share-id" href="#" data-url={`${share}`}>share</a> : ""}, {segments.join(", ")}</p>
     } else {
       return null
     }
