@@ -384,7 +384,8 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
         plugins.push(() => {
           return (tree: Root, _file) => {
             visit(tree, "code", (node: Code) => {
-              if (node.lang === "mermaid") {
+              // 支持插件 mermaid-style
+              if (node.lang === "mermaid" || node.lang === "merm") {
                 node.data = {
                   hProperties: {
                     className: ["mermaid"],
