@@ -6,6 +6,7 @@ import { QuartzPluginData } from "../../plugins/vfile"
 import { Root } from "hast"
 import { htmlToJsx } from "../../util/jsx"
 import { i18n } from "../../i18n"
+import { Data } from "vfile"
 
 interface TagContentOptions {
   sort?: SortFn
@@ -102,7 +103,14 @@ export default ((opts?: Partial<TagContentOptions>) => {
         </div>
       )
     } else {
-      const pages = allPagesWithTag(tag)
+
+      let pages: Data[]
+      if (tag == "recent") {
+        pages = allFiles;
+      } else {
+        pages = allPagesWithTag(tag)
+      }
+
       const listProps = {
         ...props,
         allFiles: pages,
