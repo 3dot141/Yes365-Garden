@@ -44,7 +44,10 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
       let share = "";
       if (fileData.frontmatter?.permalink) {
-        share = fileData.frontmatter?.permalink
+        const permalink = fileData.frontmatter.permalink;
+        if (typeof permalink === "string") {
+          share = fileData.frontmatter?.permalink as string;
+        }
       }
 
       return (
