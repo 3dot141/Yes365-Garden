@@ -30,4 +30,5 @@ echo "[git] backup complete"
 
 # deploy
 echo "[deploy] do vercel deploy"
+echo $PATH
 vercel --prod
